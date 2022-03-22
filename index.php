@@ -4,22 +4,22 @@
 
     #Personagem Masculina
     $characterM = file_get_contents("https://rickandmortyapi.com/api/character/122");
-    $characterMepisode = file_get_contents("https://rickandmortyapi.com/api/episode/13");
 
     #Personagem Feminina
     $characterF = file_get_contents("https://rickandmortyapi.com/api/character/179");
-    $characterFepisode = file_get_contents("https://rickandmortyapi.com/api/episode/6");
-
-
+   
 #JSON Parse
 
     #Personagem Masculina
     $parsed_characterM = json_decode($characterM, true);
-    $parsed_characterMepisode = json_decode($characterMepisode, true);
+    $pre_parsed_characterMepisode = file_get_contents($parsed_characterM["episode"][0]);
+    $parsed_characterMepisode = json_decode($pre_parsed_characterMepisode, true);
+
 
     #Personagem Feminina
     $parsed_characterF = json_decode($characterF, true);
-    $parsed_characterFepisode = json_decode($characterFepisode, true);
+    $pre_parsed_characterFepisode = file_get_contents($parsed_characterF["episode"][0]);
+    $parsed_characterFepisode = json_decode($pre_parsed_characterFepisode, true);
 
 ?>
 
