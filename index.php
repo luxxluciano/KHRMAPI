@@ -18,7 +18,7 @@
 
     #Personagem Feminina
     $parsed_characterF = json_decode($characterF, true);
-    $pre_parsed_characterFepisode = file_get_contents($parsed_characterF["episode"][0]);
+    $pre_parsed_characterFepisode = file_get_contents($parsed_characterF["episode"][2]);
     $parsed_characterFepisode = json_decode($pre_parsed_characterFepisode, true);
 
 ?>
