@@ -1,7 +1,7 @@
 Aplicação responsiva, construída em PHP/HTML/CSS para consumo da API Rick&Morty.
 
 Versão:
-	Ameba-0.0.1
+	Ameba-0.0.2
 	
 Apresenta, de forma simples, duas personagens da série, de gêneros distintos, identificando-as
 com: nome, cartão gráfico e local de origem, além de um (1) episódio em que aparecem no show.
