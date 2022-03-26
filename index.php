@@ -38,6 +38,46 @@ $idF = rand(0, 19);
         
         <style>
             
+            .button {
+                height: 80px;
+        
+              display: inline-block;
+              padding: 8px 8px;
+              font-size: 14px;
+              cursor: pointer;
+              text-align: center;
+              text-decoration: none;
+              outline: none;
+              color: #fff;
+              background-color: dark red;
+              border: none;
+              border-radius: 15px;
+              box-shadow: 0 2px #999;
+            }
+
+            .button:hover {background-color: orangered;}
+
+            .button:active {
+              background-color: lightgreen;
+              box-shadow: 1 2px #666;
+              transform: translateY(2px);
+
+            }
+
+            .button img {
+                height: 100%;
+                width: 100%; 
+            
+            }
+
+            .header {
+                background-color: #fff;
+                display: flex;
+                flex-flow: row wrap;
+                justify-content: space-around;
+                height: 90px;
+            }
+
             .linha {
                 background-color: #303055;
                 display: flex;
@@ -64,7 +104,13 @@ $idF = rand(0, 19);
             }
         </style>
     </head>
-
+    <div class="header">
+        <button class="button" onClick="window.location.reload();">
+            <img src="https://www.nicepng.com/png/detail/112-1129179_rick-and-morty-portal-gun-transparent-ricks-portal.png" alt="Rick And Morty Portal Gun Transparent - Ricks Portal Gun@nicepng.com">
+                
+            </img>
+        </button>
+    </div>
     <div class="linha">
         <div class="charM">
             <div class="card">
@@ -95,5 +141,5 @@ $idF = rand(0, 19);
         </div>
     </div>
 
-    <center><footer> @MEB@v.0.3.0 | DevbyLuxX©2022</footer></center>
+    
 </html>
