@@ -8,9 +8,9 @@ com: nome, cartão gráfico e local de origem, além de um (1) episódio em que 
 
 Para rodar a aplicação, clone o repositório no diretório público do seu ambiente DEV-PHP (XAMPP - LAMPP - WAMPP) ou da sua hospedagem favorita com suporte PHP e acesse pelo seu navegador predileto.
 
-Atualizações da versão:
-Botão interdimensional, busca novos personagens!!!
-Botão peido-falante!!!!
+Atualizações da versão: <br>
+Botão interdimensional, busca novos personagens!!! <br>
+Botão peido-falante!!!! <br>
 Disponivel em https://bananamachinada.com.br/rickmorty/
 
 	Requisitos:
