@@ -1,4 +1,4 @@
-Aplicação responsiva, construída em PHP/HTML/JS/CSS para consumo da API Rick&Morty.
+Aplicação responsiva, construída em PHP/HTML/CSS/JS para consumo da API Rick&Morty.
 
 Versão:
 	Ameba-0.3.2
