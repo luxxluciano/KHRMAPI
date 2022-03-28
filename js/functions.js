@@ -13,3 +13,8 @@ function PlaySound(soundobj) {
     thissound.currentTime = 3500;
   }
   
+  function updateDiv()
+{ 
+    $( "#main" ).load(window.location.href + " #main" );
+}
+  
