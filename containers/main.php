@@ -16,10 +16,10 @@ $idF = rand(0, 19);
 #Buscando dados na API
 
     #Personagem Masculina
-    $characterM = file_get_contents("https://rickandmortyapi.com/api/character/?page=$idPM&status=alive&gender=male", false, stream_context_create($stream_opts));
+    $characterM = file_get_contents("https://rickandmortyapi.com/api/character/?page=$idPM&gender=male", false, stream_context_create($stream_opts));
 #var_dump($characterM);
     #Personagem Feminina
-    $characterF = file_get_contents("https://rickandmortyapi.com/api/character/?page=$idPF&status=alive&gender=female", false, stream_context_create($stream_opts));
+    $characterF = file_get_contents("https://rickandmortyapi.com/api/character/?page=$idPF&gender=female", false, stream_context_create($stream_opts));
    
 #JSON Parse
 
