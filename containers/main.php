@@ -8,16 +8,17 @@ $stream_opts = [
 ];  
 
 
-
-$idPM = rand(1, 15);
-$idPF = rand(1, 4);
+#Variáveis para randomização dos personagens
+$idPM = rand(1, 30);
+$idPF = rand(1, 7);
 $idM = rand(0, 19);
 $idF = rand(0, 19);
+
 #Buscando dados na API
 
     #Personagem Masculina
     $characterM = file_get_contents("https://rickandmortyapi.com/api/character/?page=$idPM&gender=male", false, stream_context_create($stream_opts));
-#var_dump($characterM);
+
     #Personagem Feminina
     $characterF = file_get_contents("https://rickandmortyapi.com/api/character/?page=$idPF&gender=female", false, stream_context_create($stream_opts));
    
@@ -28,17 +29,12 @@ $idF = rand(0, 19);
     $pre_parsed_characterMepisode = file_get_contents($parsed_characterM["results"][$idM]["episode"][0], false, stream_context_create($stream_opts));
     $parsed_characterMepisode = json_decode($pre_parsed_characterMepisode, true);
 
-
     #Personagem Feminina
     $parsed_characterF = json_decode($characterF, true);
     $pre_parsed_characterFepisode = file_get_contents($parsed_characterF["results"][$idF]["episode"][0], false, stream_context_create($stream_opts));
     $parsed_characterFepisode = json_decode($pre_parsed_characterFepisode, true);
 
 ?>
-
-
-
-
 
 <div class="linha">
 
